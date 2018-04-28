@@ -19,6 +19,6 @@ app.get('/status', (req, res) => { // request and response
     message: 'hello world!'
   })
 })
-// git test ssh
+
 // runs the app
 app.listen(process.env.PORT || 8081) // environment port if avalible, or 8081
