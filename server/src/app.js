@@ -14,10 +14,16 @@ app.use(cors())
 
 // handling endpoint /status ; when request is recived,
 // func sends back json object with attribute message: and sting 'hello world'
-app.get('/status', (req, res) => { // request and response
+// app.get('/status', (req, res) => { // request and response
+//   res.send({
+//     message: 'hello world!'
+//   })
+// })
+
+app.post('/register', (req, res) => {
   res.send({
-    message: 'hello world!'
-  })
+    message: `Hello ${req.body.email} Your user was resgistered!`
+  }) // email here will be from the JSON payload
 })
 
 // runs the app
