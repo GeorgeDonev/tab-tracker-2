@@ -9,13 +9,15 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js  --fix",
     "seed": "node seed"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.4",
     "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
     "nodemon": "^1.17.3"
   }
 }
